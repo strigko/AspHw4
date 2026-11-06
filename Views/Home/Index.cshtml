@@ -1,0 +1,28 @@
+ @{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container mt-5">
+    <h1>Welcome to AspHw4</h1>
+    <p class="text-muted">Manage your products and categories.</p>
+
+    <div class="mt-4 d-flex gap-3">
+        <a asp-controller="Home"
+           asp-action="Create"
+           class="btn btn-primary">
+            Create Product
+        </a>
+
+        <a asp-controller="Categories"
+           asp-action="Create"
+           class="btn btn-success">
+            Create Category
+        </a>
+
+        <a asp-controller="Categories"
+           asp-action="Index"
+           class="btn btn-outline-dark">
+            View Categories
+        </a>
+    </div>
+</div>
